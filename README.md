@@ -15,6 +15,7 @@ Here is a short video demonstrating the program detecting and reading a french l
 ## Requirements
 
 - Python 3.10
+- pip
 
 ## Installation 
 
@@ -36,13 +37,21 @@ python -m venv venvcarplatedetection
 source venvcarplatedetection/bin/activate
 ```
 
-4. Open upsampling.py in file editor:
+
+4. Install dependencies:
+
+```
+cd CarPlateDetection
+pip install -r requirements.txt
+```
+
+5. Open upsampling.py in file editor:
 
 ```
 nano /venvcarplatedetection/lib/python3.10/site-packages/torch/nn/modules/upsampling.py
 ```
 
-5. Replace the following function:
+6. Replace the following function:
 
 ```
 def forward(self, input: Tensor) -> Tensor:
@@ -60,13 +69,13 @@ def forward(self, input: Tensor) -> Tensor:
                          )
 ```
 
-2. Create your virtual environment:
+7. Create your virtual environment:
 
 ```
 python -m venv venvcarplatedetection
 ```
 
-2. Create your virtual environment:
+8. Create your virtual environment:
 
 ```
 python -m venv venvcarplatedetection
