@@ -2,9 +2,15 @@
 
 A YOLOv5-lite based program using a custom model fine-tuned to detect French car plates, with added Optical Character Recognition (OCR) to read plates characters.
 
-## Credits 
+## Credits
 
 This project is based on [YoloV5-lite](https://github.com/ppogg/YOLOv5-Lite).
+
+## Demonstration
+
+Here is a short video demonstrating the program detecting and reading a french licence plate:
+
+[CarPlateDetection.webm](https://github.com/Toufik1247/CarPlateDetection/assets/127116915/d30dfaa2-0979-4f5b-b116-d337041f657d)
 
 ## Requirements
 
