@@ -48,7 +48,8 @@ pip install -r requirements.txt
 5. Open upsampling.py in file editor:
 
 ```
-nano /venvcarplatedetection/lib/python3.10/site-packages/torch/nn/modules/upsampling.py
+cd ..
+nano venvcarplatedetection/lib/python3.10/site-packages/torch/nn/modules/upsampling.py
 ```
 
 6. Replace the following function:
@@ -60,7 +61,7 @@ def forward(self, input: Tensor) -> Tensor:
 
 ```
 
-with
+with (be careful to indent correctly)
 
 ```
 def forward(self, input: Tensor) -> Tensor:
@@ -69,22 +70,11 @@ def forward(self, input: Tensor) -> Tensor:
                          )
 ```
 
-7. Create your virtual environment:
-
-```
-python -m venv venvcarplatedetection
-```
-
-8. Create your virtual environment:
-
-```
-python -m venv venvcarplatedetection
-```
-
 ## Usage
 
 Run the program using your webcam:
 
 ```
+cd CarPlateDetection
 python detect.py --source 0
 ```
