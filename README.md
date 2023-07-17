@@ -25,34 +25,41 @@ Here is a short video demonstrating the program detecting and reading a french l
 git clone https://github.com/Toufik1247/CarPlateDetection.git
 ```
 
-2. Create your virtual environment:
+2. Install Tesseract-OCR
+
+```
+sudo apt update
+sudo apt install tesseract-ocr
+```
+
+3. Create your virtual environment:
 
 ```
 python -m venv venvcarplatedetection
 ```
 
-3. Activate your virtual environment:
+4. Activate your virtual environment:
 
 ```
 source venvcarplatedetection/bin/activate
 ```
 
 
-4. Install dependencies:
+5. Install dependencies:
 
 ```
 cd CarPlateDetection
 pip install -r requirements.txt
 ```
 
-5. Open upsampling.py in file editor:
+6. Open upsampling.py in file editor:
 
 ```
 cd ..
 nano venvcarplatedetection/lib/python3.10/site-packages/torch/nn/modules/upsampling.py
 ```
 
-6. Replace the following function:
+7. Replace the following function:
 
 ```
 def forward(self, input: Tensor) -> Tensor:
