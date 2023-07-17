@@ -32,34 +32,40 @@ sudo apt update
 sudo apt install tesseract-ocr
 ```
 
-3. Create your virtual environment:
+3. If python3-venv is not installed, install with
 
 ```
-python -m venv venvcarplatedetection
+sudo apt-get install python3-venv
 ```
 
-4. Activate your virtual environment:
+4. Create your virtual environment:
+
+```
+python3 -m venv venvcarplatedetection
+```
+
+5. Activate your virtual environment:
 
 ```
 source venvcarplatedetection/bin/activate
 ```
 
 
-5. Install dependencies:
+6. Install dependencies:
 
 ```
 cd CarPlateDetection
 pip install -r requirements.txt
 ```
 
-6. Open upsampling.py in file editor:
+7. Open upsampling.py in file editor:
 
 ```
 cd ..
 nano venvcarplatedetection/lib/python3.10/site-packages/torch/nn/modules/upsampling.py
 ```
 
-7. Replace the following function:
+8. Replace the following function:
 
 ```
 def forward(self, input: Tensor) -> Tensor:
@@ -83,5 +89,5 @@ Run the program using your webcam:
 
 ```
 cd CarPlateDetection
-python detect.py --source 0
+python3 detect.py --source 0
 ```
